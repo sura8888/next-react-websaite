@@ -9,13 +9,17 @@ export function TwoColumn({children}){
 }
 
 export function TwoColumnMain({children}){
-    <div className={styles.main}>
-        {children}
-    </div>
+    return (
+        <div className={styles.main}>
+            {children}
+        </div>
+    )
 }
 
 export function TwoColumnSidebar({children}){
-    <div className={styles.sidebar}>
-        {children}
-    </div>
+    return (
+        <div className={styles.sidebar}>
+            {children}
+        </div>
+    )
 }

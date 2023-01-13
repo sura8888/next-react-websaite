@@ -56,6 +56,13 @@ h3 {
 }
 
 
+/* next/image */
+
+span>img {
+    transition: 0.2s;
+}
+
+
 /*リセット*/
 
 body,

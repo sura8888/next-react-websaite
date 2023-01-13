@@ -3,7 +3,8 @@ import Container from 'components/Container/Container'
 import PostBody from "components/Post-Body/Post-Body"
 import Contact from "components/Contact/Contact"
 import {TwoColumn, TwoColumnMain, TwoColumnSidebar} from 'components/Two-Column/Two-Column'
-
+import Image  from "next/legacy/image"
+import eyecatch from 'images/about.jpg'
 
 export default function About() {
   return (
@@ -12,6 +13,17 @@ export default function About() {
       title='About'
       subtitle='About development activities'
       />
+
+      <figure>
+        <Image
+          src={eyecatch}
+          alt=''
+          layout='responsive'
+          sizes='(min-width: 1152px, 100vw'
+          priority
+          placeholder="blur"
+        />
+      </figure>
 
       <TwoColumn>
         <TwoColumnMain>
