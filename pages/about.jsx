@@ -10,7 +10,7 @@ import Meta from 'components/Meta'
 export default function About() {
   return (
     <Container>
-      <Meta pageTitle='アバウト' pageDesc='About develpment activities' />
+      <Meta pageTitle='アバウト' pageDesc='About development activities' />
 
       <Hero 
       title='About'
