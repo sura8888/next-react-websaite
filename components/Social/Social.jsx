@@ -1,24 +1,33 @@
 import styles from './Social.module.css'
 import Link from 'next/link'
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faTwitter,
     faFacebookF,
     faGithub,
-} from 'fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons'
 
-export default function Social() {
+export default function Social({ iconSize = 'initial'}) {
     return(
-        <ul className={styles.list}>
+        <ul className={styles.list} style={{'--icon-size': iconSize}}>
             <li>
                 <Link href='https://twitter.com/'>
-                    <FontAwesimeIcon icon={faTwitter} />
+                    <FontAwesomeIcon icon={faTwitter} />
                     <span className='sr-only'>Twitter</span>
                 </Link>
             </li>
             <li>
-
+                <Link href='https://www.facebook.com/'>
+                    <FontAwesomeIcon icon={faFacebookF} />
+                    <span className='sr-only'>Facebook</span>
+                </Link>
+            </li>
+            <li>
+                <Link href='https://github.com/'>
+                    <FontAwesomeIcon icon={faGithub} />
+                    <span className='sr-only'>GitHub</span>
+                </Link>
             </li>
         </ul>
     )
